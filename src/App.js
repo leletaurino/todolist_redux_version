@@ -6,35 +6,8 @@ import {Todos} from './features/Todos';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faMinusCircle } from '@fortawesome/free-solid-svg-icons'
 
-// const initTodos = [
-//   {
-//     name: 'Call my mum',
-//     dueDate: new Date().toLocaleString(),
-//     user_id: 1
-//   },
-//   {
-//     name: 'Go to school',
-//     dueDate: new Date().toLocaleString(),
-//     user_id: 1
-//   },
-//   {
-//     name: 'Do my homework',
-//     dueDate: new Date().toLocaleString(),
-//     user_id: 1
-//   }
-// ]
 
 function App() {
-  // const [todos, setTodos] = useState([])
-  // useEffect(() => {
-  //   setTodos(initTodos);
-
-  //   return () => {
-
-  //   }
-  
-  // }, []);
-
 
   const todos = useSelector(state => {
     return state.todos
@@ -82,15 +55,4 @@ function App() {
     </div>
   );
 }
-// const matchStateToProps = (state) => {
-//   return {todos: [...state]}
-// }
-// const mapDispatchToProps = (dispatch) =>{
-//   return {
-//     addTodo: name => dispatch(addTodo(name)),
-//     removeTodo: todo => dispatch(removeTodo(todo))
-//   }
-// }
-
-//const createConnector = connect(matchStateToProps, mapDispatchToProps);
-export default App; //createConnector(App);
+export default App;
